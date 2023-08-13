@@ -1,13 +1,15 @@
 using System;
+using System.Threading.Tasks;
 
 
 namespace R5T.S0100
 {
     class Program
     {
-        static void Main()
+        static async Task Main()
         {
-            Console.WriteLine("Hello World!");
+            //await Demonstrations.Instance.In_SampleProjectFileContext();
+            await Demonstrations.Instance.Create_SampleRazorClassLibraryProjectFile();
         }
     }
 }
