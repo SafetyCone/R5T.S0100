@@ -63,7 +63,7 @@ namespace R5T.S0100
             async Task ApplicationContextOperation(IApplicationContext applicationContext)
             {
                 // Make sure the sample project file does not exist.
-                Instances.FileSystemOperator.DeleteFile_OkIfNotExists(
+                Instances.FileSystemOperator.Delete_File_OkIfNotExists(
                     projectFilePath.Value);
 
                 await Instances.ProjectFileContextOperator.In_New_ProjectFileContext(
